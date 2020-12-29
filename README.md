@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# [theFront - Multipurpose Template + UI Kit](https://thefront.maccarianagency.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Material-UI & ReactJS based Landing Pages Kit made with [Material UI's](https://material-ui.com/?ref=maccarian-agency) components, [React](https://reactjs.org/?ref=maccarian-agency). It supports [create-react-app](https://facebook.github.io/create-react-app/?ref=maccarian-agency) build-tools (react-scripts), [NextJS](https://nextjs.org/?ref=maccarian-agency), [GatsbyJS](https://www.gatsbyjs.com/?ref=maccarian-agency) and Typescript to boost your app development process!
+A professional React Kit that comes with plenty of ready-to-use Material-UI components that will help you to build faster & beautiful fontend pages. Each component is fully customizable, responsive and easy to integrate.
 
-## Available Scripts
+## Built with
 
-In the project directory, you can run:
+- React
+- Material-UI
+- React Scripts
+- NextJS
+- GatsbyJS
+- Typescript
+- Figma & Sketch
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+theFront landing page examples can be used out of the box, but since they’re built on flexible components, you can also create new pages all your own with ease. Copy-paste a section here, a component there, switch up a few variables, and you have an entirely new landing!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- More than 45 pages
+- 300+ component reusable compositions
+- 30+ stand-alone components created by following the [Atomic Design Methodology](https://bradfrost.com/blog/post/atomic-web-design/)
+- create-react-app & react-scripts support
+- NextJS and server side rendering support
+- GatsbyJS and server side rendering support
+- Typescript support
+- Dark mode support
+- Image lazy loading support
+- Animated sections on scroll
+- Swiper support
+- Fully responsive on all modern browsers
+- Figma and Sketch design files (available in Standard Plus & Extended licences)
+- Rich documentation with code samples and parameters/options
+- Free customer support
+- Free updates
 
-### `npm test`
+## Learn more
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Launch a live demo](https://thefront.maccarianagency.com)
+- [Documentation & Quick Start](https://thefront-styleguide.maccarianagency.com)
 
-### `npm run build`
+## Design Highlights
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+theFront was designed as a rich system from the start, which is reflected in both the end result and the original design.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 15 Figma and Sketch files are available
+- Beautiful, modern style flexible enough to suit most brands
+- All images are included with a free-to-use license
+- Icon set provided by Font Awesome Kit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following are the pages that have Figma and Sketch design implementation:
 
-### `npm run eject`
+- [Job Listing](https://thefront.maccarianagency.com/job-listing)
+- [Rental](https://thefront.maccarianagency.com/rental)
+- [E-commerce](https://thefront.maccarianagency.com/e-commerce)
+- [Cloud Hosting](https://thefront.maccarianagency.com/cloud-hosting)
+- [Logistics](https://thefront.maccarianagency.com/logistics)
+- [Portfolio](https://thefront.maccarianagency.com/portfolio-page)
+- [Career Listing](https://thefront.maccarianagency.com/career-listing-minimal)
+- [Career Opening](https://thefront.maccarianagency.com/career-opening)
+- [Help Center](https://thefront.maccarianagency.com/help-center)
+- [Company About](https://thefront.maccarianagency.com/about)
+- [Company Pricing](https://thefront.maccarianagency.com/pricing)
+- [Blog Newsroom](https://thefront.maccarianagency.com/blog-newsroom)
+- [Blog Article](https://thefront.maccarianagency.com/blog-article)
+- [Company Contact](https://thefront.maccarianagency.com/contact-page)
+- [Account Page](https://thefront.maccarianagency.com/account/general)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Folder structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In the root folder there are 4 folders:
+- **pages** *The NextJS & GatsbyJS pre-rendered pages are located under this folder. If you are not using NextJS or GatsbyJS you may delete or ignore the `pages` folder*
+- **plugins** *The GatsbyJS custom plugins are located under this folder. If you are not using GatsbyJS you may delete or ignore the `plugins` folder*
+- **public** *Here are the public assets, images and `index.html` file. Note that you don't need `index.html` file if you are using NextJS or GatsbyJS versions. Also note, that when running GatsbyJS build scripts the `index.html` file will be overwritten. If you want to recover the file copy the content of `_index.html` and past into `index.html`*
+- **src** *Here is the main business logic of the theme.*
+- **|----assets**
+- **|----common**
+- **|----components** *The reusable and stand-alone components are stored here, by following [Atomic Design Methodology](https://bradfrost.com/blog/post/atomic-web-design/)*
+- **|----|----atoms** *These are small functional components that are not using any other atomic components*
+- **|----|----molecules** *Tese are those functional components which have dependencies from other atoms*
+- **|----|----organisms** *These are the functional components that are using other molecules and atoms*
+- **|----layouts**
+- **|----|----Main** *The main layout: header navigation, the main container and footer part*
+- **|----|----Minimal** *The minimal layout*
+- **|----theme** *In this folder there are overrides of the default color palette and typography coming from MUI*
+- **|----views** *All the views/pages that are available. Here are the combination and composition of re-usable components and pages representations.*
+- **|----App.js** *This is the main starting point file, which instantiates React router and renders the application views. If you are not using react-scripts you may delete or ignore the `App.js` file*
+- **|----serviceWorker.js** *React Scripts specific file. If you are not using react-scripts you may delete or ignore the `serviceWorker.js` file*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Quick start with React Scripts
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Install dependencies: `npm install`
+- Start the server: `npm run start`
+- Build on production: `npm run build`
 
-## Learn More
+## Quick start with Pre-rendered version NextJS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Install dependencies: `npm install`
+- Start the server: `npm run nextjs:dev`
+- Build on production: `npm run nextjs:build`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Quick start with Pre-rendered version GatsbyJS
 
-### Code Splitting
+- Install dependencies: `npm install`
+- Start the server: `npm run gatsbyjs:develop`
+- Build on production: `npm run gatsbyjs:build` (Built files are in `dist` folder)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Instalation of images
 
-### Analyzing the Bundle Size
+In order to not overload the theme size with the static images we hosted them into a different git repository and put them as a dependency of the theme which is being installed when doing `npm i` and being copied from `node_modules` into the `public/assets/images` folder during `npm postinstall`
+The images will be deleted from `public/assets/images` folder and will be fetched again from remote git repository every time you do `npm i`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+*First you need to do the following, before starting to modify/customize the theme and also images based on your app/business needs:*
 
-### Making a Progressive Web App
+- Download images manually from https://github.com/gevorgmakaryan/thefront-assets
+- Copy the `images` folder and paste into the `public/assets` folder
+- Remove the `public/assets/images` in `.gitignore` file
+- Open the `package.json` file and remove `assets` and `postinstall` scripts
+- Remove `thefront-assets` from the `dependencies` in `package.json` file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Run the style guide
 
-### Advanced Configuration
+- `npm run styleguide`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## MUI Documentation
 
-### Deployment
+The full documentation for the React Material Kit can be found [here](https://material-ui.com?ref=maccarian-agency).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Free Updates and Support
 
-### `npm run build` fails to minify
+No matter how well documented and built something is, sometimes you just need a little help! That’s why we make ourselves available to help you anytime, just contact our [support](hi@maccarianagency.com) email. We’re also planning tons of updates! In addition to keeping theFront up to date with Material UI's core and any necessary patches, we’ll be adding new features regularly over the coming months!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Contact us via email](hi@maccarianagency.com)
+
+## Contact Us
+
+- Email Us: hi@maccarianagency.com
+- [Follow us on Linkedin](https://www.linkedin.com/company/maccarian)
+- [Follow us on Instagram](https://www.instagram.com/maccarian/)
+- [Follow us on Facebook](https://facebook.com/maccarian.agency/)
